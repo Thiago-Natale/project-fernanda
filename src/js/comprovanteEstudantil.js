@@ -10,7 +10,7 @@ function carregarDados() {
 
             <p class="course">
               Universidade de Uberaba<br />
-              <span>Direito</span>
+              <span>Bacharelado em Direito</span>
             </p>
 
             <p><strong>CPF:</strong> ${dados.cpf}</p>
