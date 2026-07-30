@@ -1,0 +1,158 @@
+/* Container geral */
+.container {
+  display: flex;
+  padding: 20px;
+  max-width: 380px;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Topo */
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  color: #585858;
+  margin: 0;
+  font-weight: 500;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  background: #374151;
+  align-self: flex-end;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-back img {
+    height: 25px;
+    transform: rotate(90deg);
+    margin-right: 10px;
+}
+
+/* Card */
+.student-card {
+  background: white;
+  width: 100%;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
+  box-shadow: rgb(149 157 165 / 20%) 3px 3px 4px 0px;
+  gap: 10px;
+}
+
+.logo {
+  width: 8rem;
+}
+
+.qr-photo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Foto padrão */
+.photo {
+  max-width: 100px;
+  width: 100%;
+  max-height: 100px;
+  border-radius: 6px;
+  background-position: center;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 5px solid #e1e9f5;
+  overflow: hidden;
+}
+
+.photo img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* QR Code */
+.qr-area img {
+  width: 100px;
+  height: 100px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Texto */
+.info h3 {
+  font-size: 1.2rem;
+  color: #1f4e8c;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.registration {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.course {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.course span {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.info p {
+  font-size: 1rem;
+  margin: 4px 0;
+  color: #374151;
+}
+
+.info strong {
+    color: #1b4d81;
+}
+
+.issued {
+  margin-top: 8px;
+}
+
+.code {
+  color: #1b4d81;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Botão inferior */
+.btn-academic {
+  width: 90%;
+  background: #323e50;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+}

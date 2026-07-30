@@ -1,0 +1,113 @@
+/* --- BOTÃO HAMBÚRGUER --- */
+
+.menu-btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5.276rem;
+  width: 4.25rem;
+  border-radius: 0 2.25rem 2.25rem 0;
+  background-color: #2e333b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1001;
+  transition: all 0.3s ease;
+}
+
+.menu-btn span {
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.menu-btn span:nth-child(1) {
+  transform: translateY(-6px);
+}
+.menu-btn span:nth-child(2) {
+  transform: translateY(0);
+}
+.menu-btn span:nth-child(3) {
+  transform: translateY(6px);
+}
+
+.menu-btn.active {
+  left: 250px;
+  width: 50px;
+}
+
+.menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* --- MENU LATERAL --- */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -300px; /* escondido inicialmente */
+  width: 300px;
+  height: 100%;
+  background-color: #2e333b;
+  color: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Quando ativo */
+.side-menu.active {
+  left: 0;
+}
+
+/* Cabeçalho do menu */
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.menu-header .logo {
+  width: 8rem;
+}
+
+/* Lista */
+.side-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.side-menu li:hover {
+  background-color: #3a3f47;
+}
+
+.icon {
+  height: 25px;
+}

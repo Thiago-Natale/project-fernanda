@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIUBE - Autenticidade de Documentos</title>
+
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="styles/autenticacao.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- TELA DE VERIFICAÇÃO -->
+      <div id="telaVerificacao" class="card">
+        <div class="logo-area">
+          <img src="../img/logo_uniube_novo_branca.png" alt="" />
+        </div>
+
+        <h3>CONFIRMAÇÃO DA AUTENTICIDADE DE DOCUMENTOS</h3>
+
+        <div class="campo-duplo">
+          <div>
+            <label>Data da Emissão</label>
+            <input type="text" id="dataEmissao" readonly />
+          </div>
+          <div>
+            <label>Hora da Emissão</label>
+            <input type="text" id="horaEmissao" readonly />
+          </div>
+        </div>
+
+        <div class="codigo-controle">
+          <label>Código de Controle</label>
+          <input type="text" id="codigoControle" readonly />
+        </div>
+
+        <div class="botoes">
+          <button id="btnVerificar">VERIFICAR</button>
+          <button id="btnNovaConsulta" onclick="iniciarValidacao()">
+            NOVA CONSULTA
+          </button>
+        </div>
+      </div>
+
+      <!-- LOADING -->
+      <div id="loading" class="card loading hidden">
+        <div class="spinner"></div>
+        <p>Validando documento...</p>
+      </div>
+
+      <!-- TELA CONFIRMADA -->
+      <div id="telaConfirmada" class="card verde hidden">
+        <div class="logo-area logo-verde"><img src="../img/logo_uniube_novo_branca.png" alt="" /></div>
+
+        <h3 class="verde-texto">Autenticidade do documento confirmada.</h3>
+
+        <div id="divInfo" class="info">
+        </div>
+
+        <p id="dt_validade"></p>
+
+        <div class="botoes">
+          <button id="viewDoc">VISUALIZAR DOCUMENTO</button>
+          <button id="print"><i>🖨️</i> IMPRIMIR</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="../js/autenticacao.js"></script>
+  </body>
+</html>

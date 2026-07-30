@@ -1,0 +1,42 @@
+header {
+  height: 5.276rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: rgb(0 0 0 / 4%) 0px 4px 20px, rgb(179 179 179 / 23%) 0px 4px 6px;
+}
+
+.robot-icon {
+  height: 30px;
+}
+
+.header-logo {
+  height: 40px;
+  margin: 0 20px;
+}
+
+.sino-icon {
+  height: 30px;
+}
+
+.profile-container {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid #e1e9f5;
+  overflow: hidden;
+}
+
+.profile-container:hover {
+  cursor: pointer;
+}
+
+.profile-container img {
+  position: relative;
+  top: 10px;
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVA Uniube</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/imports/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/sideMenu.css" />
+    <link rel="stylesheet" href="src/styles/header.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/calendario.css" />
+    <link rel="stylesheet" href="src/styles/cards-finais.css" />
+    <link rel="stylesheet" href="src/styles/btn-voltar-topo.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="side-menu" id="side-menu">
+        <div class="menu-header">
+          <img src="src/img/logo_branca.png" alt="Logo" class="logo" />
+        </div>
+
+        <ul>
+          <li style="background-color: #1f1f27; color: #6ca8f7">
+            <img
+              src="src/img/svg/lightbulb-solid-full.svg"
+              class="icon"
+              alt=""
+            />Destaques
+          </li>
+          <a href="src/pages/cursos.html">
+            <li>
+              <img src="src/img/svg/list-solid-full.svg" class="icon" alt="" />
+              Meus cursos
+            </li>
+          </a>
+          <li>
+            <img
+              src="src/img/svg/envelope-solid-full-blue.svg"
+              class="icon"
+              alt=""
+            />
+            Comunicação
+          </li>
+          <li>
+            <img
+              src="src/img/svg/building-solid-full.svg"
+              class="icon"
+              alt=""
+            />
+            Emprega Uniube
+          </li>
+          <li>
+            <img
+              src="src/img/svg/calendar-check-solid-full.svg"
+              class="icon"
+              alt=""
+            />
+            Eventos
+          </li>
+          <li>
+            <img
+              src="src/img/svg/handshake-angle-solid-full.svg"
+              class="icon"
+              alt=""
+            />
+            Preciso de ajuda
+          </li>
+          <li>
+            <img
+              src="src/img/svg/screwdriver-wrench-solid-full.svg"
+              class="icon"
+              alt=""
+            />
+            Utilidades
+          </li>
+        </ul>
+      </nav>
+
+      <img src="src/img/icone_robo.png" alt="Robot Icon" class="robot-icon" />
+
+      <img src="src/img/logo_cadeirante.png" alt="Logo" class="header-logo" />
+
+      <img
+        src="src/img/svg/bell-regular-full.svg"
+        alt="Sino Icon"
+        class="sino-icon"
+      />
+
+      <div class="profile-container">
+        <img
+          src="src/img/svg/user-solid-full.svg"
+          alt="Profile Icon"
+          class="profile-icon"
+        />
+      </div>
+    </header>
+
+    <main>
+      <div class="cards-gerais" id="card1">
+        <img src="src/img/icons_mentores.png" alt="Icone Mentores" />
+        <div class="text-card">
+          <p>Conheça os seus Mentores</p>
+          <p>Clique aqui para acessar</p>
+        </div>
+      </div>
+
+      <div id="card2" class="cards-gerais">
+        <img
+          class="icone-bege"
+          src="src/img/svg/envelope-solid-full.svg"
+          alt="Envelope icon"
+        />
+        <div id="divEmail">
+        </div>
+      </div>
+
+      <div id="card3" class="cards-gerais">
+        <div>
+          <img
+            class="icone-bege"
+            src="src/img/svg/wifi-solid-full.svg"
+            alt="wifi icon"
+          />
+          <p>Senha WIFI - LIAE</p>
+        </div>
+        <p>Atualizar</p>
+      </div>
+
+      <div id="card4" class="cards-gerais">
+        <img
+          class="icone-bege"
+          src="src/img/svg/calendar-days-solid-full.svg"
+          alt="Calendario icon"
+        />
+        <div>
+          <p>Agenda do curso</p>
+          <p>Vincular a agenda do google</p>
+        </div>
+      </div>
+
+      <div class="cards-gerais" id="card5">
+        <div class="row-title">
+          <img src="src/img/svg/comment-solid-full.svg" alt="chat icone" />
+          <h2>Comunicação</h2>
+        </div>
+        <div class="row">
+          <p>UNIUBE</p>
+          <span class="chat-com-mensagem">57</span>
+        </div>
+        <div class="row">
+          <p>CURSO</p>
+          <span class="chat-com-mensagem">3</span>
+        </div>
+        <div class="row">
+          <p>TIRA-DÚVIDAS</p>
+          <span class="chat-sem-mensagem">0</span>
+        </div>
+      </div>
+
+      <div class="cards-gerais" id="card6">
+        <div class="row-title">
+          <img src="src/img/svg/headset-solid-full.svg" alt="Headset" />
+          <h2>SAE</h2>
+        </div>
+        <div class="row">
+          <p>COMPLEMENTAR</p>
+          <span class="chat-sem-mensagem">0</span>
+        </div>
+        <div class="row">
+          <p>FEEDBACK PARCIAL</p>
+          <span class="chat-sem-mensagem">0</span>
+        </div>
+        <div class="row">
+          <p>FINALIZADO</p>
+          <span class="chat-sem-mensagem">0</span>
+        </div>
+      </div>
+
+      <div style="flex-direction: column" class="cards-gerais" id="card7">
+        <div class="row">
+          <div style="display: flex">
+            <img
+              src="src/img/svg/money-bill-wave-solid-full.svg"
+              alt="Money Icon"
+            />
+            <h2>Financeiro</h2>
+          </div>
+
+          <img
+            src="src/img/svg/eye-slash-solid-full.svg"
+            alt="eye-slash-solid-full"
+          />
+        </div>
+        <img
+          style="object-fit: contain; height: 100px"
+          src="src/img/icone_financeiro.png"
+          alt=""
+        />
+      </div>
+
+      <div style="flex-direction: column" class="cards-gerais" id="card8">
+        <div class="row-title">
+          <img src="src/img/svg/id-badge-solid-full.svg" alt="ID Badge Icon" />
+          <h2>Documentos</h2>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <p
+            style="
+              font-size: 3rem;
+              font-weight: 600;
+              margin: top 10px;
+              color: gray;
+            "
+          >
+            0
+          </p>
+          <p>Pendentes</p>
+        </div>
+      </div>
+
+      <div
+        style="flex-direction: column; align-items: center; gap: 30px"
+        class="cards-gerais"
+        id="card9"
+      >
+        <div class="calendar">
+          <div class="calendar-header">
+            <button id="prev">&#10094;</button>
+            <h2 id="month-year"></h2>
+            <button id="next">&#10095;</button>
+          </div>
+          <div class="calendar-days">
+            <div class="day-name">Dom</div>
+            <div class="day-name">Seg</div>
+            <div class="day-name">Ter</div>
+            <div class="day-name">Qua</div>
+            <div class="day-name">Qui</div>
+            <div class="day-name">Sex</div>
+            <div class="day-name">Sab</div>
+          </div>
+          <div class="calendar-grid" id="calendar-grid"></div>
+        </div>
+
+        <div class="agenda">
+          <h3>Agenda</h3>
+          <div class="agenda-content">
+            <p id="no-events-text">Sem eventos para --/--</p>
+            <img
+              src="src/img/calendario.png"
+              alt="Calendário"
+              class="agenda-img"
+            />
+          </div>
+        </div>
+
+        <section style="width: 100%" class="info-section">
+          <h4>Horário de aulas</h4>
+          <div class="info-card">
+            <span class="number">7</span>
+            <p>Componentes</p>
+          </div>
+        </section>
+
+        <section style="width: 100%" class="info-section">
+          <h4>Arquivos</h4>
+          <div class="info-card danger">
+            <span class="number">8</span>
+            <p>Novos</p>
+          </div>
+        </section>
+
+        <section style="width: 100%" class="info-section">
+          <h4>Questões discursivas</h4>
+          <div class="info-card">
+            <span class="number zero">0</span>
+            <p>Abertas</p>
+          </div>
+        </section>
+
+        <section style="width: 100%" class="info-section">
+          <h4>Comprovante estudantil</h4>
+          <div class="info-card">
+            <a href="src/pages/comprovante.html">
+              <img src="src/img/qr.png" alt="QR Code do comprovante" />
+            </a>
+            <p id="dt_validade"></p>
+
+          </div>
+        </section>
+
+        <!-- Botão para voltar ao topo -->
+        <button
+          style="display: flex; align-items: center; justify-content: center"
+          id="back-to-top"
+        >
+          ↑
+        </button>
+      </div>
+    </main>
+
+    <script type="module" src="src/js/index.js"></script>
+  </body>
+</html>

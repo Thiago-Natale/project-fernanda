@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ava Uniube</title>
+
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/sideMenu.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="styles/cursos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="side-menu" id="side-menu">
+        <div class="menu-header">
+          <a href="../../index.html"
+            ><img src="../img/logo_branca.png" alt="Logo" class="logo"
+          /></a>
+        </div>
+
+        <ul>
+          <li>
+            <img
+              src="../img/svg/lightbulb-solid-full.svg"
+              class="icon"
+              alt=""
+            />Destaques
+          </li>
+          <li style="background-color: #1f1f27; color: #6ca8f7">
+            <img src="../img/svg/list-solid-full.svg" class="icon" alt="" />
+            Meus cursos
+          </li>
+          <li>
+            <img
+              src="../img/svg/envelope-solid-full-blue.svg"
+              class="icon"
+              alt=""
+            />
+            Comunicação
+          </li>
+          <li>
+            <img src="../img/svg/building-solid-full.svg" class="icon" alt="" />
+            Emprega Uniube
+          </li>
+          <li>
+            <img
+              src="../img/svg/calendar-check-solid-full.svg"
+              class="icon"
+              alt=""
+            />
+            Eventos
+          </li>
+          <li>
+            <img
+              src="../img/svg/handshake-angle-solid-full.svg"
+              class="icon"
+              alt=""
+            />
+            Preciso de ajuda
+          </li>
+          <li>
+            <img
+              src="../img/svg/screwdriver-wrench-solid-full.svg"
+              class="icon"
+              alt=""
+            />
+            Utilidades
+          </li>
+        </ul>
+      </nav>
+
+      <img src="../img/icone_robo.png" alt="Robot Icon" class="robot-icon" />
+
+      <a href="../../index.html">
+        <img src="../img/logo_cadeirante.png" alt="Logo" class="header-logo" />
+      </a>
+
+      <img
+        src="../img/svg/bell-regular-full.svg"
+        alt="Sino Icon"
+        class="sino-icon"
+      />
+
+      <div class="profile-container">
+        <img
+          src="../img/svg/user-solid-full.svg"
+          alt="Profile Icon"
+          class="profile-icon"
+        />
+      </div>
+    </header>
+
+    <main>
+      <h3>Meus Cursos</h3>
+      <div class="cursos-container">
+        <!-- Abas -->
+        <div class="abas">
+          <button class="aba active" data-target="andamento">
+            EM ANDAMENTO
+          </button>
+          <button class="aba" data-target="concluidos">CONCLUÍDOS</button>
+          <button class="aba" data-target="interrompidos">INTERROMPIDOS</button>
+        </div>
+
+        <!-- CONTEÚDOS DAS ABAS -->
+
+        <!-- Aba EM ANDAMENTO -->
+        <div id="andamento" class="conteudo-aba active">
+          <div class="card-curso">
+            <div class="imagem-topo">
+              <span class="tag">Bacharelado</span>
+              <span class="tag">Matriculado</span>
+              <img src="../img/bg-cursos-tecnologia.jpeg" alt="Imagem curso" />
+            </div>
+
+            <h4>SISTEMAS DE INFORMAÇÃO</h4>
+
+            <div class="grafico">
+              <div class="circulo"></div>
+            </div>
+
+            <ul class="indicadores">
+              <li>
+                <div class="icon-porcetagem concluida"></div>
+                <span>0% concluído</span>
+              </li>
+              <li>
+                <div class="icon-porcetagem em-andamento"></div>
+                <span>25% em andamento</span>
+              </li>
+              <li>
+                <div class="icon-porcetagem nao-concluida"></div>
+                <span>75% não concluído</span>
+              </li>
+            </ul>
+
+            <button class="btn-acessar">Acessar</button>
+          </div>
+        </div>
+
+        <!-- Aba CONCLUÍDOS -->
+        <div id="concluidos" class="conteudo-aba">
+          <div class="card-curso">
+            <div class="imagem-topo">
+              <span class="tag">Bacharelado</span>
+              <span class="tag">Concluído</span>
+              <img src="../img/bg-cursos-tecnologia.jpeg" alt="Imagem curso" />
+            </div>
+
+            <h4>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h4>
+
+            <div class="grafico">
+              <div class="circulo concluido"></div>
+            </div>
+
+            <ul class="indicadores">
+              <li>
+                <div class="icon-porcetagem concluida"></div>
+                <span>100% concluído</span>
+              </li>
+              <li>
+                <div class="icon-porcetagem em-andamento"></div>
+                <span>0% em andamento</span>
+              </li>
+              <li>
+                <div class="icon-porcetagem nao-concluida"></div>
+                <span>0% não concluído</span>
+              </li>
+            </ul>
+            <button class="btn-acessar">Ver detalhes</button>
+          </div>
+        </div>
+
+        <!-- Aba INTERROMPIDOS -->
+        <div id="interrompidos" class="conteudo-aba"></div>
+      </div>
+    </main>
+
+    <script type="module" src="../js/indexCursos.js"></script>
+  </body>
+</html>
