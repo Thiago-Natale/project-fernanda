@@ -22,7 +22,7 @@ function carregarDados() {
 
             <p>
               Código de controle:<br />
-              <span class="code">ZKQJ.7LMP.RT9X.3VWB</span>
+              <span class="code">XN8R.5KTD.Q7LP.2ZWF</span>
             </p>`;
 }
 
